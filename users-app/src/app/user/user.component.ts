@@ -9,9 +9,9 @@ import { User } from './user';
 })
 export class UserComponent implements OnInit {
   users: Array<User> = [
-    new User(1, "First","Last","Email@email.com","passwordMEAN"),
-    new User(2, "First","Last","Email@email.com","passMEANword"),
-    new User(3, "First","Last","Email@email.com","MEANpassword")
+    new User(1, 'First', 'Last', 'Email@email.com', 'passwordMEAN'),
+    new User(2, 'First', 'Last', 'Email@email.com', 'passMEANword'),
+    new User(3, 'First', 'Last', 'Email@email.com', 'MEANpassword')
   ];
 
   // users: User[] = [];
@@ -31,5 +31,6 @@ export class UserComponent implements OnInit {
 
   // this._userService.getUsers().then(users => this.users = users);
   // this._userService.getUsers(user: User): Promise<any> ??
-  }
+
+  // }
 }
