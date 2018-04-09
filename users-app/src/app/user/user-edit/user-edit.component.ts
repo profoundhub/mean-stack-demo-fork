@@ -19,7 +19,8 @@ export class UserEditComponent implements OnInit {
   }
 
   update() {
-    this.userEdit = 
-    this.user
+    // this.userEdit
+    // this.user
+    this.updateUserEvent.emit({original: this.user, edited: this.userEdit});
   }
 }
