@@ -19,7 +19,7 @@ export class UserComponent implements OnInit {
 
   // Method
   getUsers() {
-  this._userService.getUsers(this.user._id)
+  this._userService.getUsers(this.user)
   .then(users => this.users = users);
   // this._userService.getUsers().then(users => this.users = users);
   // this._userService.getUsers(user: User): Promise<any> ??
