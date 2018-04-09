@@ -23,7 +23,11 @@ export class UserComponent implements OnInit {
     // this.getUsers();
   }
 
-  // Method
+  // Methods
+  create(user: User) {
+    this.users.push(user);
+  }
+
   getUsers() {
 
   // this._userService.getUsers()

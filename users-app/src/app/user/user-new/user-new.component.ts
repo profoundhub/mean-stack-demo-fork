@@ -6,6 +6,7 @@ import { User } from './../user';
   templateUrl: './user-new.component.html',
   styleUrls: ['./user-new.component.css']
 })
+
 export class UserNewComponent implements OnInit {
   newUser = new User();
   @Output() createNewEvent = new EventEmitter();

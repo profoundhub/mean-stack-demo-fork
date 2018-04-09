@@ -2,6 +2,6 @@
 
 {{ users | json}} 
 
-<app-user-new></app-user-new>
+<app-user-new (createNewEvent)="create($event)"></app-user-new>
 
 <app-user-list [users]="users"></app-user-list>
