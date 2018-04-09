@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { User } from './../user';
 
 @Component({
   selector: 'app-user-list',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./user-list.component.css']
 })
 export class UserListComponent implements OnInit {
+  @Input() users;
+  @Output() destroyUserEvent = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  // Methods
+
+  destroy(user: User) {
+    this.destroyUserEvent.emit(user);
   }
 
 }

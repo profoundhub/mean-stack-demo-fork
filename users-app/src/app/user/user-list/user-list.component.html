@@ -1,3 +1,7 @@
-<p>
-  user-list works!
-</p>
+<h3>User List Comp.</h3>
+<div *ngFor="let user of users">
+  {{ user._id }}. {{ user.first_name }} | {{ user.last_name }} | {{ user.email }} 
+  <button (click)="destroy()">Delete</button>
+  <button (click)="user.editable = !user.editable">Edit</button>
+  <app-user-edit [user]="user" *ngIf="user.editable"></app-user-edit>
+</div>
