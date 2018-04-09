@@ -1,6 +1,5 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { User } from '../user';
-import { EventEmitter } from 'protractor';
 
 @Component({
   selector: 'app-user-list',
