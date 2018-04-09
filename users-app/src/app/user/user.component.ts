@@ -17,8 +17,8 @@ export class UserComponent implements OnInit {
   }
 
   // Method
-  getUsers(){
-    this._userService.getUsers
-    then
+  getUsers() {
+    this._userService.getUsers()
+    .then(users => this.users = this.usersa)
   }
 }
