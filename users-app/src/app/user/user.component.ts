@@ -8,8 +8,8 @@ import { User } from './user';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  users: Users[] = [];
-  usersa: Array<User> = 
+  users: User[] = [];
+  usersa: Array<User> = [];
 
   constructor() { }
 
