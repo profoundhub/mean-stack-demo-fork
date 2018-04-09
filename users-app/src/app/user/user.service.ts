@@ -5,15 +5,15 @@ export class UserService {
 
   constructor() { }
 
-  create() {
+  create(user: User) {
 
   }
   
-  destroy() {
+  destroy(user: User) {
 
   }
   
-  update() {
+  update(user: User) {
 
   }
 
