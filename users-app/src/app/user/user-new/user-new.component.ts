@@ -9,7 +9,7 @@ import { User } from './../user';
 
 export class UserNewComponent implements OnInit {
   newUser = new User();
-  @Output() createNewEvent = new EventEmitter();
+  @Output() createNewUserEvent = new EventEmitter();
 
   constructor() { }
 
@@ -18,9 +18,8 @@ export class UserNewComponent implements OnInit {
 
   create() {
     // call server + clear obj. + save
-    this.createNewEvent.emit(this.newUser);
+    this.createNewUserEvent.emit(this.newUser);
     this.newUser = new User();
-
   }
 
 }
