@@ -1,3 +1,4 @@
+import { Http } from '@angular/http';
 import { User } from './user';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
@@ -5,23 +6,30 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class UserService {
 
-  constructor() { }
+  constructor(private _http: Http) { }
 
   create(user: User) {
 
   }
-  
+
   destroy(user: User) {
 
   }
-  
+
   update(user: User) {
 
   }
 
-  // getUSers(): Observable<User> {
+  // getUsers(): Observable<User> {
   //   return
   // }
 
+  getUser() {
+    //   return
+  }
+
+  getUsers() {
+    //   return
+  }
 
 }
