@@ -1,3 +1,5 @@
+import { User } from './../user';
+
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -5,12 +7,16 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './user-edit.component.html',
   styleUrls: ['./user-edit.component.css']
 })
+
 export class UserEditComponent implements OnInit {
-  @Input() user;
+  @Input() user: User;
+  userEdit: User = new User();
 
   constructor() { }
 
   ngOnInit() {
+    Object.assign(this.userEdit, this.user);
+    console.log(this.userEdit);
   }
 
 }
