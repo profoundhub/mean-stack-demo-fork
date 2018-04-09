@@ -8,19 +8,27 @@ import { User } from './user';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  users: Array<User> = []; //  users: User[] = [];
+  users: Array<User> = [
+    new User(1, "First","Last","Email@email.com","passwordMEAN"),
+    new User(2, "First","Last","Email@email.com","passMEANword"),
+    new User(3, "First","Last","Email@email.com","MEANpassword")
+  ];
+
+  // users: User[] = [];
   // user: any = [];
 
   constructor(private _userService: UserService) { }
 
   ngOnInit() {
-    this.getUsers();
+    // this.getUsers();
   }
 
   // Method
-  getUsers() {
-  this._userService.getUsers()
-  .then(users => this.users = users);
+
+  // getUsers() {
+  // this._userService.getUsers()
+  // .then(users => this.users = users);
+
   // this._userService.getUsers().then(users => this.users = users);
   // this._userService.getUsers(user: User): Promise<any> ??
   }
