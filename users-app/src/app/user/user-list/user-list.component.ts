@@ -19,7 +19,7 @@ export class UserListComponent implements OnInit {
   // Methods
 
   destroy(user: User) {
-
+    this.destroyUserEvent.emit(user);
   }
 
 }
