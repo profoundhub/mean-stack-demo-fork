@@ -7,20 +7,19 @@ import { User } from './user';
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css']
 })
-
 export class UserComponent implements OnInit {
-  //  users: User[] = [];
-  users: Array<User> = [];
+  users: Array<User> = []; //  users: User[] = [];
 
   constructor(private _userService: UserService) { }
 
   ngOnInit() {
-    this.getUsers();
+    // this.getUsers();
   }
 
   // Method
   getUsers() {
     this._userService.getUsers()
+    // this._userService.getUsers(user: User): Promise<any>
     .then(users => this.users = users);
   }
 }
