@@ -15,7 +15,7 @@ export class UserService {
   }
 
   destroy(user: User) {
-    return this._http.delete('/users' + user.id).toPromise();
+    return this._http.delete('/users' + user._id).toPromise();
   }
 
   update(user: User) {
