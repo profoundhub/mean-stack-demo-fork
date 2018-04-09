@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { User } from './../user';
 
 @Component({
@@ -8,10 +8,18 @@ import { User } from './../user';
 })
 export class UserNewComponent implements OnInit {
   newUser = new User();
+  @Output() createNewEvent = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  create() {
+    // call server + clear obj. + save
+    this.createNewEvent.emit(this.newUser);
+    this.newUser = new User();
+
   }
 
 }
