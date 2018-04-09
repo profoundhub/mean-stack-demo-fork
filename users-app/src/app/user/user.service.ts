@@ -2,8 +2,9 @@ import { Http } from '@angular/http';
 import { User } from './user';
 import { Injectable } from '@angular/core';
 // import 'rxjs';
-import { Observable } from 'rxjs/Observable';
-
+// tslint:disable-next-line:import-blacklist
+import { Observable } from 'rxjs';
+// import 'rxjs';
 
 @Injectable()
 export class UserService {
