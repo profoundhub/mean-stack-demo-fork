@@ -24,13 +24,13 @@ export class UserComponent implements OnInit {
   }
 
   // Method
+  getUsers() {
 
-  // getUsers() {
   // this._userService.getUsers()
   // .then(users => this.users = users);
 
-  // this._userService.getUsers().then(users => this.users = users);
-  // this._userService.getUsers(user: User): Promise<any> ??
+    // this._userService.getUsers().then(users => this.users = users);
+    // this._userService.getUsers(user: User): Promise<any> ??
+  }
 
-  // }
 }
