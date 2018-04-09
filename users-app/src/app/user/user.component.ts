@@ -9,7 +9,7 @@ import { User } from './user';
 })
 export class UserComponent implements OnInit {
   users: Array<User> = []; //  users: User[] = [];
-  user: any = [];
+  // user: any = [];
 
   constructor(private _userService: UserService) { }
 
