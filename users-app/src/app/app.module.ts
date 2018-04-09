@@ -13,7 +13,7 @@ import { UserDetailsComponent } from './user/user-details/user-details.component
 import { UserListComponent } from './user/user-list/user-list.component';
 import { UserNewComponent } from './user/user-new/user-new.component';
 import { UserService } from './user/user.service';
-import { UserEditComponent } from './user-edit/user-edit.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,8 +21,7 @@ import { UserEditComponent } from './user-edit/user-edit.component';
     ClassComponent,
     UserDetailsComponent,
     UserListComponent,
-    UserNewComponent,
-    UserEditComponent
+    UserNewComponent
   ],
   imports: [
     BrowserModule,
