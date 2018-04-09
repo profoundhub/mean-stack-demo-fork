@@ -1,5 +1,3 @@
-import { HttpClientModule } from '@angular/common/http';
-import { HttpModule } from '@angular/http';
 import { Http } from '@angular/http';
 import { User } from './user';
 import { Injectable } from '@angular/core';
