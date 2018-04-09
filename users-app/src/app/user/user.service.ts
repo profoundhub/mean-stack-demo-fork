@@ -1,5 +1,6 @@
 import { User } from './user';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class UserService {
@@ -18,9 +19,9 @@ export class UserService {
 
   }
 
-  getUSers(): Array<User> {
-    return
-  }
+  // getUSers(): Observable<User> {
+  //   return
+  // }
 
 
 }
