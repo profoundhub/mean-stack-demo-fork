@@ -15,7 +15,11 @@ export class UserService {
   }
 
   destroy(user: User) {
+<<<<<<< HEAD
     return this._http.delete('/users' + user._id).toPromise();
+=======
+    return this._http.delete('/users' + user.id).toPromise();
+>>>>>>> 9aa19f6ae7be26ba7264a84d2983749afe234a6e
   }
 
   update(user: User) {
