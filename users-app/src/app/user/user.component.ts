@@ -9,7 +9,7 @@ import { User } from './user';
 })
 export class UserComponent implements OnInit {
   users: Array<User> = []; //  users: User[] = [];
-  user: any;
+  user: any = [];
 
   constructor(private _userService: UserService) { }
 
@@ -19,7 +19,7 @@ export class UserComponent implements OnInit {
 
   // Method
   getUsers() {
-  this._userService.getUsers(this.user)
+  this._userService.getUsers()
   .then(users => this.users = users);
   // this._userService.getUsers().then(users => this.users = users);
   // this._userService.getUsers(user: User): Promise<any> ??
