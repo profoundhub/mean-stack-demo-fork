@@ -9,7 +9,7 @@ export class UserService {
   constructor(private _http: Http) { }
 
   create(user: User) {
-
+    return this._http.post('/users', user).toPromise();
   }
 
   destroy(user: User) {
