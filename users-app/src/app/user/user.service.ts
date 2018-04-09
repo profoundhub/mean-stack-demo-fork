@@ -13,11 +13,11 @@ export class UserService {
   }
 
   destroy(user: User) {
-
+    return this._http.delete('/users' + user.id).toPromise();
   }
 
   update(user: User) {
-
+    return this._http.put('/users' + user._id, user).toPromise();
   }
 
   // getUsers(): Observable<User> {
@@ -25,11 +25,11 @@ export class UserService {
   // }
 
   getUser() {
-    //   return
+    return this._http.get('/users').toPromise();
   }
 
-  getUsers() {
-    //   return
+  getUsers(user: User) {
+    return this._http.get('/users' + user._id).toPromise();
   }
 
 }
