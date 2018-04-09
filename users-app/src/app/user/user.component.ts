@@ -7,18 +7,20 @@ import { User } from './user';
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css']
 })
+
 export class UserComponent implements OnInit {
-  users: User[] = [];
-  usersa: Array<User> = [];
+  //  users: User[] = [];
+  users: Array<User> = [];
 
   constructor(private _userService: UserService) { }
 
   ngOnInit() {
+    this.getUsers();
   }
 
   // Method
   getUsers() {
     this._userService.getUsers()
-    .then(users => this.users = this.usersa)
+    .then(users => this.users = users);
   }
 }
