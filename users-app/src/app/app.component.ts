@@ -1,3 +1,5 @@
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 import { Http } from '@angular/http';
 import { Component } from '@angular/core';
 
