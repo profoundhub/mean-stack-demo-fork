@@ -21,7 +21,7 @@ import { UserEditComponent } from './user/user-edit/user-edit.component';
     ClassComponent,
     UserDetailsComponent,
     UserListComponent,
-    UserNewComponent
+    UserNewComponent,
     UserEditComponent
   ],
   imports: [
