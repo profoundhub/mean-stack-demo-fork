@@ -2,5 +2,6 @@
 <div *ngFor="let user of users">
   {{ user._id }}. {{ user.first_name }} | {{ user.last_name }} | {{ user.email }} 
   <button (click)="destroy()">Delete</button>
-  <button (click)="edit">Edit</button>
+  <!-- <button (click)="edit">Edit</button> -->
+  <app-user-edit [user]="user"></app-user-edit>
 </div>
