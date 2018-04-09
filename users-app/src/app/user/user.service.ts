@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class UserService {
 
-  constructor(private _http: Http) { }
+  constructor(private _http: Http) {}
 
   create(user: User) {
     return this._http.post('/users', user).map(data => data.json()).toPromise();
