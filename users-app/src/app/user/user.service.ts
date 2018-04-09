@@ -5,4 +5,19 @@ export class UserService {
 
   constructor() { }
 
+  create() {
+
+  }
+  
+  destroy() {
+
+  }
+  
+  update() {
+
+  }
+
+  getUSers() {}
+
+
 }
