@@ -6,6 +6,7 @@ import { User } from './../user';
   templateUrl: './user-edit.component.html',
   styleUrls: ['./user-edit.component.css']
 })
+
 export class UserEditComponent implements OnInit {
   @Input() user: User;
   @Output() updateUserEvent = new EventEmitter();
@@ -19,8 +20,6 @@ export class UserEditComponent implements OnInit {
   }
 
   update() {
-    // this.userEdit
-    // this.user
     this.userEdit.editable = false;
     this.updateUserEvent.emit({original: this.user, edited: this.userEdit});
   }

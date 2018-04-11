@@ -9,5 +9,4 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'User App';
-  // constructor(private _http: Http) {}
 }
